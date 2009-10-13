@@ -7,6 +7,13 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>iceserver</name>
   <url>http://maven.apache.org</url>
+  <inceptionYear>2009</inceptionYear>
+  <scm>
+  	<connection>scm:svn:https://flex-mmorpg-server.googlecode.com/svn/trunk/iceserver</connection>
+  	<developerConnection>scm:svn:https://flex-mmorpg-server.googlecode.com/svn/trunk/iceserver</developerConnection>
+  	<tag>iceserver</tag>
+  	<url>http://flex-mmorpg-server.googlecode.com/svn/</url>
+  </scm>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
