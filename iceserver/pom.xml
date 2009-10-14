@@ -9,12 +9,52 @@
   <description>This is a rpc server which can connect with FLEX client.</description>
   <url>http://maven.apache.org</url>
   <inceptionYear>2009</inceptionYear>
+  
+  <developers>
+  	<developer>
+  		<name>yubingxing</name>
+  		<url>http://icestar2008.blogspot.com</url>
+  		<timezone>+8</timezone>
+  	</developer>
+  </developers>
+  <organization>
+  	<name>icestar</name>
+  </organization>
+  
   <scm>
   	<connection>scm:svn:https://flex-mmorpg-server.googlecode.com/svn/trunk/iceserver</connection>
   	<developerConnection>scm:svn:https://flex-mmorpg-server.googlecode.com/svn/trunk/iceserver</developerConnection>
   	<tag>iceserver</tag>
   	<url>http://flex-mmorpg-server.googlecode.com/svn/</url>
   </scm>
+  
+  <repositories>
+  	<repository>
+  		<id>hibernate-memcached</id>
+  		<name>hibernate-memcached</name>
+  		<url>http://raykrueger.googlecode.com/svn/repository</url>
+  	</repository>
+  	<repository>
+  		<id>central</id>
+  		<name>Maven Repository Switchboard</name>
+  		<layout>default</layout>
+  		<url>http://repo1.maven.org/maven2</url>
+  		<snapshots>
+  			<enabled>false</enabled>
+  		</snapshots>
+  	</repository>
+  	<repository>
+  		<id>repository.jboss.org</id>
+  		<url>http://repository.jboss.org/maven2</url>
+  		<snapshots>
+  			<enabled>false</enabled>
+  		</snapshots>
+  	</repository>
+  	<repository>
+  		<id>snapshots.jboss.org</id>
+  		<url>http://snapshots.jboss.org/maven2</url>
+  	</repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
