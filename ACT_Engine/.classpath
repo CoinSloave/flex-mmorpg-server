@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="res"/>
-	<classpathentry kind="lib" path="F:/MyPlugins/KEmulator_lite_win32_release_098_200812042313/KEmulator.jar"/>
-	<classpathentry kind="con" path="J2MELIB"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>
