@@ -1,0 +1,24 @@
+/*
+ * Copyright 2009/9/11 com.glu Group.
+ */
+import "user.proto";
+package com.glu.rpc.service;
+
+option java_package = "com.glu.rpc.service";
+option java_outer_classname = "RegisteServiceProto";
+option optimize_for = SPEED;
+
+enum FailureCause {
+	DUPLICATE_USERNAME = 0;
+	REGISTER_RPC_FAILED = 1;
+}
+
+message RegisteResult{
+	optional bool success = 1;
+	optional FailureCause failure_cause = 2 [default = DUPLICATE_USERNAME];
+}
+
+service RegisteService{
+	rpc checkDuplicateUserName(com.glu.rpc.service.User) returns(RegisteResult);
+	rpc callRegister(com.glu.rpc.service.User) returns(RegisteResult);
+}
