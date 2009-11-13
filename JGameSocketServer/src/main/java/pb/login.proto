@@ -1,0 +1,17 @@
+/*
+ * Copyright 2009/9/11 com.glu Group.
+ */
+import "user.proto";
+package com.glu.rpc.service;
+
+option java_package = "com.glu.rpc.service";
+option java_outer_classname = "LoginServiceProto";
+option optimize_for = SPEED;
+
+message LoginResult{
+	optional bool success = 1;
+}
+
+service LoginService{
+	rpc login(com.glu.rpc.service.User) returns(LoginResult);
+}
