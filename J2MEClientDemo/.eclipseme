@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eclipsemeMetadata jad="J2MEClientDemo.jad" version="1.7.9">
-   <device group="Series 60 MIDP Concept SDK Beta 0.3.1, Nokia edition" name="Series_60_MIDP_Concept_SDK_Beta_0_3_1_Nokia_edition"/>
+   <device group="Prototype 4.0 S40 (240x320) MIDP Emulator" name="Prototype_4_0_S40_240x320_MIDP_Emulator"/>
    <signing signProject="false"/>
 </eclipsemeMetadata>
