@@ -139,7 +139,7 @@ public class RpcIoHandler extends IoHandlerAdapter {
 			throws Exception {
 		logger.warn("RPC Server Error", cause);
 		// 创建回复消息构建器
-		Builder builder = Response.newBuilder().setError(cause.getMessage());
+		Builder builder = Response.newBuilder().setError(String.valueOf(cause));
 		if (cause instanceof RpcException) {
 			RpcException e = (RpcException) cause;
 			if (e.getReason() != null) {
