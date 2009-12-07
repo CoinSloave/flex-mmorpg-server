@@ -8,7 +8,7 @@ option java_outer_classname = "UserProto";
 option optimize_for = SPEED;
 
 message User {
-	optional string userName=1;
-	optional string password=2;
-	optional string email=3;
+	optional string userName = 1;
+	optional string password = 2;
+	optional string email = 3;
 }
