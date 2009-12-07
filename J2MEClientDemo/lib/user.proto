@@ -1,0 +1,10 @@
+package com.glu.rpc.service;
+
+option java_package = "com.glu.rpc.service";
+option java_outer_classname = "UserProto";
+
+message User {
+	optional string userName = 1;
+	optional string password = 2;
+	optional string email = 3;
+}
