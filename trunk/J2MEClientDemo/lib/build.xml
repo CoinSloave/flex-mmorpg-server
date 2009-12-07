@@ -1,0 +1,8 @@
+<taskdef classname="net.yura.tools.mobilegen.MobileProtoGen" classpath="./dist/${ant.project.name}.jar" name="gen-proto"/>
+   <gen-proto
+     protoSource="${basedir}/test.proto"
+     objectPackage="net.yura.tools.mobilegen.model"
+     outputPackage="net.yura.mobile.gen"
+     outputClass="ProtoAccess"
+     sourceRoot="${basedir}/src"/>
+</target> 

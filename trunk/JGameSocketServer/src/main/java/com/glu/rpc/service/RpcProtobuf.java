@@ -108,7 +108,7 @@ public final class RpcProtobuf {
     public boolean hasMethodName() { return hasMethodName; }
     public java.lang.String getMethodName() { return methodName_; }
     
-    // required bytes request_proto = 3;
+    // optional bytes request_proto = 3;
     public static final int REQUEST_PROTO_FIELD_NUMBER = 3;
     private boolean hasRequestProto;
     private com.google.protobuf.ByteString requestProto_ = com.google.protobuf.ByteString.EMPTY;
@@ -118,7 +118,6 @@ public final class RpcProtobuf {
     public final boolean isInitialized() {
       if (!hasServiceName) return false;
       if (!hasMethodName) return false;
-      if (!hasRequestProto) return false;
       return true;
     }
     
@@ -396,7 +395,7 @@ public final class RpcProtobuf {
         return this;
       }
       
-      // required bytes request_proto = 3;
+      // optional bytes request_proto = 3;
       public boolean hasRequestProto() {
         return result.hasRequestProto();
       }
@@ -847,7 +846,7 @@ public final class RpcProtobuf {
     java.lang.String descriptorData = 
       "\n\trpc.proto\022\023com.glu.rpc.service\"K\n\007Requ" +
       "est\022\024\n\014service_name\030\001 \002(\t\022\023\n\013method_name" +
-      "\030\002 \002(\t\022\025\n\rrequest_proto\030\003 \002(\014\"\225\001\n\010Respon" +
+      "\030\002 \002(\t\022\025\n\rrequest_proto\030\003 \001(\014\"\225\001\n\010Respon" +
       "se\022\026\n\016response_proto\030\001 \001(\014\022\r\n\005error\030\002 \001(" +
       "\t\022\027\n\010callback\030\003 \001(\010:\005false\022I\n\014error_reas" +
       "on\030\004 \001(\0162 .com.glu.rpc.service.ErrorReas" +
