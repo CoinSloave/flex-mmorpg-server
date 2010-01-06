@@ -26,8 +26,7 @@ public class MainInstance extends MIDlet {
 		
 		try {
 			System.out.println("Creating user object");
-			final User user = User.newBuilder().setUserName("yubingxing").setPassword("123456")
-			.setEmail("yubingxing123@gmail.com").build();
+			final User user = User.newBuilder().setUserName("yubingxing").setPassword("123456").setEmail("yubingxing123@gmail.com").build();
 			System.out.println("User : " + user.toString());
 			
 			System.out.println("Creating byte array from example object");
