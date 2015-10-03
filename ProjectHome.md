@@ -1,0 +1,1 @@
+This is a flex mmorpg game server, it bases on scala liftweb framework and red5.
